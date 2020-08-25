@@ -530,3 +530,11 @@ resource "aws_lambda_function" "url_rewrite" {
   runtime       = "nodejs10.x"
   provider      = "aws.aws_cloudfront_certificate"
 }
+
+# Outputs
+# --------------------------------------------------------------
+
+output "govuk_mirror_replica_read_policy_arn" {
+  value       = "${aws_s3_bucket_policy.govuk_mirror_replica_read_policy.arn}"
+  description = "ARN of the govuk_mirror_replica_read_policy"
+}

@@ -51,5 +51,7 @@ The primary bucket should be in London and the backup in Ireland.
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| govuk\_mirror\_replica\_read\_policy\_arn | ARN of the govuk\_mirror\_replica\_read\_policy |
 
